@@ -1,0 +1,8 @@
+{
+  "name": "apex_profile_page",
+  "description": "",
+  "memory": 128,
+  "timeout": 5,
+  "role": "arn:aws:iam::376585504040:role/apex_profile_page_lambda_function",
+  "environment": {}
+}

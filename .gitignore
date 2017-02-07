@@ -1,0 +1,7 @@
+.python-version
+.DS_Store
+__pycache__
+Jinja*
+MarkupSafe*
+markupsafe*
+feedparser*

@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<!--
+  Strata by HTML5 UP
+  html5up.net | @ajlkn
+  Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <head>
+    <title>chroju</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+  </head>
+  <body id="top">
+
+    <!-- Header -->
+      <header id="header">
+        <div class="inner">
+          <a href="#" class="image avatar"><img src="images/avatar.jpg" alt="" /></a>
+          <h1>who is <strong>chroju</strong> ?</h1>
+        </div>
+      </header>
+
+    <!-- Main -->
+      <div id="main">
+
+        <!-- One -->
+          <section id="one">
+            <header class="major">
+              <h2>Welcome !</h2>
+            </header>
+            <p>Thank you for your visiting. I'm IT infrastructure and DevOps engineer in Tokyo. Thorough the practices of DevOps and coding, I aim to make IT system operation more efficient. In private, I love Japanese manga, animation and VOCALOID music !</p>
+            <h3>Career</h3>
+              <div class="table-wrapper">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>2011 - 2015</td>
+                      <td>Windows server engineer</td>
+                    </tr>
+                    <tr>
+                      <td>2015 - now</td>
+                      <td>IT infrastructure and DevOps engineer</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            <h3>Favorite technologies</h3>
+              <div class="table-wrapper">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>Environment</td>
+                      <td>AWS, VMware, Docker</td>
+                    </tr>
+                    <tr>
+                      <td>DevOps</td>
+                      <td>Ansible, fluentd, influxDB</td>
+                    </tr>
+                    <tr>
+                      <td>Language</td>
+                      <td>Python, Ruby, bash</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+          </section>
+
+        <!-- Two -->
+          <section id="two">
+            <h2>Recent entries</h2>
+            <h3>Tech blog</h3>
+            <ul>
+              {% for entry in techblog %}
+              <li><a href="{{ entry.url }}">{{ entry.title }}</a></li>
+              {% endfor %}
+            </ul>
+            <ul class="actions">
+              <li><a href="https://chroju.github.io/" class="button special">show more articles</a></li>
+              <li><a href="https://chroju.github.io/atom.xml" class="button icon fa-rss">subscribe</a></li>
+            </ul>
+            <h3>Hobby blog</h3>
+            <ul>
+              {% for entry in hobbyblog %}
+              <li><a href="{{ entry.url }}">{{ entry.title }}</a></li>
+              {% endfor %}
+            </ul>
+            <ul class="actions">
+              <li><a href="http://chroju.hatenablog.jp/" class="button special">show more articles</a></li>
+              <li><a href="http://chroju.hatenablog.jp/feed" class="button icon fa-rss">subscribe</a></li>
+            </ul>
+          </section>
+
+
+      </div>
+
+    <!-- Footer -->
+      <footer id="footer">
+        <div class="inner">
+          <ul class="icons">
+            <li><a href="https://twitter.com/chroju" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+            <li><a href="https://github.com/chroju" class="icon fa-github"><span class="label">Github</span></a></li>
+            <li><a href="https://speakerdeck.com/chroju" class="icon fa-slideshare"><span class="label">Speaker Deck</span></a></li>
+            <li><a href="https://booklog.jp/users/chroju" class="icon fa-book"><span class="label">Booklog</span></a></li>
+            <li><a href="https://www.instagram.com/chroju" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+          </ul>
+          <ul class="copyright">
+            <li>&copy; chroju</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+          </ul>
+        </div>
+      </footer>
+
+    <!-- Scripts -->
+      <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/js/jquery.poptrox.min.js"></script>
+      <script src="assets/js/skel.min.js"></script>
+      <script src="assets/js/util.js"></script>
+      <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+      <script src="assets/js/main.js"></script>
+
+  </body>
+</html>
