@@ -29,7 +29,7 @@
         <!-- One -->
           <section id="one">
             <header class="major">
-              <h2>Welcome !</h2>
+              <h2>Profile</h2>
             </header>
             <p>Thank you for your visiting. I'm IT infrastructure and DevOps engineer in Tokyo. Thorough the practices of DevOps and coding, I aim to make IT system operation more efficient. In private, I love Japanese manga, animation and VOCALOID music !</p>
             <h3>Career</h3>
@@ -90,6 +90,16 @@
             <ul class="actions">
               <li><a href="http://chroju.hatenablog.jp/" class="button special">show more articles</a></li>
               <li><a href="http://chroju.hatenablog.jp/feed" class="button icon fa-rss">subscribe</a></li>
+            </ul>
+            <h3>Qiita</h3>
+            <ul>
+              {% for entry in qiita %}
+              <li><a href="{{ entry.url }}">{{ entry.title }}</a></li>
+              {% endfor %}
+            </ul>
+            <ul class="actions">
+              <li><a href="http://qiita.com/chroju/" class="button special">show more articles</a></li>
+              <li><a href="http://qiita.com/chroju/feed" class="button icon fa-rss">subscribe</a></li>
             </ul>
           </section>
 

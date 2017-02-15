@@ -9,6 +9,7 @@ COUNTER_HASH_SIZE = 10
 
 TECH_BLOG_URL = 'https://chroju.github.io/atom.xml'
 HOBBY_BLOG_URL = 'http://chroju.hatenablog.jp/feed'
+QIITA_URL = 'http://qiita.com/chroju'
 
 BUCKET = 'chroju-profile'
 s3 = boto3.client('s3')
@@ -33,6 +34,7 @@ def pick_up_entries(url):
 
 techblog = pick_up_entries(TECH_BLOG_URL)
 hobbyblog = pick_up_entries(HOBBY_BLOG_URL)
+qiita = pick_up_entries(QIITA_URL)
 
 def handle(event, context):
     logger.info(event)
