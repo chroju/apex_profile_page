@@ -1,0 +1,11 @@
+[build]
+  functions = "pages/"
+  command = "make build"
+
+[build.environment]
+  GO_IMPORT_PATH = "github.com/chroju/apex_profile_page"
+
+[[redirects]]
+  from = "/"
+  to = ".netlify/functions/profile"
+  status = 200
